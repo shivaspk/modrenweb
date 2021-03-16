@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+<h1>The XMLHttpRequest Object</h1>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  console.log('Before',xhttp.readyState);
+  xhttp.onreadystatechange = function() {
+      console.log(this.readyState);
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.response;
+     var obj = JSON.parse(this.response);
+
+     console.log(obj);
+     console.log(obj.headers.Host);
+    }
+  };
+  xhttp.open("GET", "https://httpbin.org/get?city=Bangalore", true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
