@@ -1,0 +1,15 @@
+{
+  "background_color": "purple",
+  "description": "Shows random roses pictures.",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "icon/rose-icon1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "Awesome Rose pictures",
+  "short_name": "Roses",
+  "start_url": "index.html"
+}
