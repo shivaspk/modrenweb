@@ -1,0 +1,15 @@
+{
+  "background_color": "purple",
+  "description": "A sample PWA app",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icon/rose-icon1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "Persistent PWA App",
+  "short_name": "MyPWA",
+  "start_url": "index.html"
+}
