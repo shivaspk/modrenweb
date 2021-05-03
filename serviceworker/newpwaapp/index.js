@@ -5,4 +5,8 @@ if ('serviceWorker' in navigator) {
       .register('pwa.js')
       .then(() => { console.log('Service Worker Registered'); });
   }
+  else
+  {
+      console.log("your browser has no service worker support!")
+  }
   
